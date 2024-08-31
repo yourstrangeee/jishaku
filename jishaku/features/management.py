@@ -140,7 +140,7 @@ class ManagementFeature(Feature):
             "scope": "+".join(scopes),
             "permissions": permissions.value
         }
-        strange = discord.Embed(description=f"Kryptonite's Invite Link:\n<https://discordapp.com/oauth2/authorize?{urlencode(query, safe='+')}>")
+        strange = discord.Embed(description=f"{self.bot.user.name} Invite Link:\n<https://discordapp.com/oauth2/authorize?{urlencode(query, safe='+')}>")
         return await ctx.send(
             embed=strange
         )
