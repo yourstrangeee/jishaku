@@ -155,8 +155,8 @@ class RootCommand(Feature):
 
         # Show websocket latency in milliseconds
         summary.append(f"Average websocket latency: {round(self.bot.latency * 1000, 2)}ms")
-        strange = discord.Embed(description=f"\n".join(summary))
-        strange.set_footer(text="Kryptonite's Jishaku",icon_url=self.bot.user.display_avatar.url)
+        strange = discord.Embed(description=f"\n".join(summary),color=0x2f3136)
+        strange.set_footer(text=f"{self.bot.user.name} Jishaku",icon_url=self.bot.user.display_avatar.url)
         await ctx.send(embed=strange)
 
     # pylint: disable=no-member
