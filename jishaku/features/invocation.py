@@ -100,9 +100,10 @@ class InvocationFeature(Feature):
 
         if ctx.prefix:
             kwargs["content"] = ctx.prefix + command_string.lstrip("/")
-        else:
-            await ctx.send("Reparsing requires a prefix")
             return
+        # else:
+        #     await ctx.send("Reparsing requires a prefix")
+        #     return
 
         for override in overrides:
             if isinstance(override, discord.User):
