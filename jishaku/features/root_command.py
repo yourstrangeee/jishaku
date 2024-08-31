@@ -48,8 +48,7 @@ class RootCommand(Feature):
                      invoke_without_command=True, ignore_extra=False)
     async def jsk(self, ctx: ContextA):
         if ctx.author.id not in [819792407327014933,1129092454495289374]:
-            your =self.bot.get_user(1129092454495289374)
-            strange = discord.Embed(description=f"This Bot Is Managed By [- Your Strange](https://discord.com/users/{your.name})")
+            strange = discord.Embed(description=f"This Bot Isn't Managed By You")
             await ctx.send(embed=strange)
         """
         The Jishaku debug and diagnostic commands.
