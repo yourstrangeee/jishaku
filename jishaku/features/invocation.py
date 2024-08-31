@@ -170,8 +170,6 @@ class InvocationFeature(Feature):
 
         if ctx.prefix:
             alt_ctx = await copy_context_with(ctx, content=ctx.prefix + command_string)
-        else:
-            await ctx.send("Reparsing requires a prefix")
             return
 
         if alt_ctx.command is None:
