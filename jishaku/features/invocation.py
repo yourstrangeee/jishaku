@@ -97,10 +97,12 @@ class InvocationFeature(Feature):
         """
 
         kwargs: typing.Dict[str, typing.Any] = {}
+        kwargs["content"] = command_string.lstrip("/")
+        #     return
 
-        if ctx.prefix:
-            kwargs["content"] = ctx.prefix + command_string.lstrip("/")
-            return
+        # if ctx.prefix:
+        #     kwargs["content"] = ctx.prefix + command_string.lstrip("/")
+        #     return
         # else:
         #     await ctx.send("Reparsing requires a prefix")
         #     return
