@@ -170,6 +170,8 @@ class InvocationFeature(Feature):
 
         if ctx.prefix:
             alt_ctx = await copy_context_with(ctx, content=ctx.prefix + command_string)
+        else:
+            alt_ctx = await copy_context_with(ctx, content=ctx.prefix + command_string)
             return
 
         if alt_ctx.command is None:
