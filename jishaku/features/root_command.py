@@ -50,6 +50,7 @@ class RootCommand(Feature):
         if ctx.author.id not in [819792407327014933,1129092454495289374]:
             strange = discord.Embed(description=f"This Bot Isn't Managed By You")
             await ctx.send(embed=strange)
+            return
         """
         The Jishaku debug and diagnostic commands.
 
