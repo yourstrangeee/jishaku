@@ -53,8 +53,6 @@ class RootCommand(Feature):
         This command on its own gives a status brief.
         All other functionality is within its subcommands.
         """
-        if ctx.author.id != self.bot.main_owner.id:
-                return await ctx.send("ok")
 
         # Try to locate what vends the `discord` package
         distributions: typing.List[str] = [
