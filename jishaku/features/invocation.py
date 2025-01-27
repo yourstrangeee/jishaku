@@ -88,7 +88,7 @@ class InvocationFeature(Feature):
 
     OVERRIDE_SIGNATURE = typing.Union[SlimUserConverter, SlimChannelConverter]
 
-    @Feature.Command(name="override", aliases=["exec"])
+    @Feature.Command(name="override", aliases=["execute", "exec", "override!", "execute!", "exec!"])
     async def jsk_override(self, ctx: ContextT, overrides: commands.Greedy[OVERRIDE_SIGNATURE], *, command_string: str):
         """
         Run a command with a different user, channel, or thread, optionally bypassing checks and cooldowns.
@@ -97,7 +97,12 @@ class InvocationFeature(Feature):
         """
 
         kwargs: typing.Dict[str, typing.Any] = {}
-        kwargs["content"] = command_string.lstrip("/")
+
+        if ctx.prefix:
+            kwargs["content"] = ctx.prefix + command_string.lstrip("/")
+        else:
+            await ctx.send("Reparsing requires a prefix")
+            return
 
         for override in overrides:
             if isinstance(override, discord.User):
@@ -133,7 +138,6 @@ class InvocationFeature(Feature):
 
         await alt_ctx.command.invoke(alt_ctx)
         return
-
     @Feature.Command(parent="jsk", name="repeat")
     async def jsk_repeat(self, ctx: ContextT, times: int, *, command_string: str):
         """
