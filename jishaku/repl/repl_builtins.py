@@ -6,7 +6,7 @@ jishaku.repl.repl_builtins
 
 Builtin functions and variables within Jishaku REPL contexts.
 
-:copyright: (c) 2021 Devon (Gorialis) R
+:copyright: (c) 2021 Devon (scarletcafe) R
 :license: MIT, see LICENSE for more details.
 
 """

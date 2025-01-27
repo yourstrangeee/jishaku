@@ -6,7 +6,7 @@ jishaku.formatting
 
 Advanced formatting constructs
 
-:copyright: (c) 2021 Devon (Gorialis) R
+:copyright: (c) 2021 Devon (scarletcafe) R
 :license: MIT, see LICENSE for more details.
 
 """

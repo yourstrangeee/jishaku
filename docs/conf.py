@@ -22,8 +22,8 @@
 from jishaku.meta import __version__
 
 project = 'jishaku'
-copyright = '2021, Gorialis'
-author = 'Gorialis'
+copyright = '2021, Devon (scarletcafe) R'
+author = 'scarletcafe'
 
 # The short X.Y version
 version = __version__
@@ -152,7 +152,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'jishaku.tex', 'jishaku Documentation',
-     'Gorialis', 'manual'),
+     'scarletcafe', 'manual'),
 ]
 
 

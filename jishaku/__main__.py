@@ -10,7 +10,7 @@ It has console logging set up and uses a mention prefix.
 This is mostly intended to be a quick means to have a debuggable bot from a token.
 It can be used to perform manual administrative actions as the bot, or to test Jishaku itself.
 
-:copyright: (c) 2021 Devon (Gorialis) R
+:copyright: (c) 2021 Devon (scarletcafe) R
 :license: MIT, see LICENSE for more details.
 
 """

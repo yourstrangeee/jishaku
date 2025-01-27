@@ -6,7 +6,7 @@ jishaku.features.sql
 
 The jishaku SQL-related commands and utilities.
 
-:copyright: (c) 2021 Devon (Gorialis) R
+:copyright: (c) 2021 Devon (scarletcafe) R
 :license: MIT, see LICENSE for more details.
 
 """

@@ -6,7 +6,7 @@ jishaku.features.invocation
 
 The jishaku command invocation related commands.
 
-:copyright: (c) 2021 Devon (Gorialis) R
+:copyright: (c) 2021 Devon (scarletcafe) R
 :license: MIT, see LICENSE for more details.
 
 """

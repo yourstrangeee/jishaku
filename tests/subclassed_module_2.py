@@ -9,7 +9,7 @@ discover weird behaviors related to subclassing.
 
 This variant overrides behavior directly.
 
-:copyright: (c) 2021 Devon (Gorialis) R
+:copyright: (c) 2021 Devon (scarletcafe) R
 :license: MIT, see LICENSE for more details.
 
 """

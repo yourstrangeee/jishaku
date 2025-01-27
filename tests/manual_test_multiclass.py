@@ -11,7 +11,7 @@ without conflicting with eachother.
 Execute this test from the repository using:
 python -m tests.manual_test_multiclass "$BOT_TOKEN"
 
-:copyright: (c) 2021 Devon (Gorialis) R
+:copyright: (c) 2021 Devon (scarletcafe) R
 :license: MIT, see LICENSE for more details.
 
 """

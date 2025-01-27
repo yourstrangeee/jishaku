@@ -1,8 +1,8 @@
 [![Python versions](https://img.shields.io/pypi/pyversions/jishaku.svg)](https://pypi.python.org/pypi/jishaku)
-[![License](https://img.shields.io/pypi/l/jishaku.svg)](https://github.com/Gorialis/jishaku/blob/master/LICENSE)
+[![License](https://img.shields.io/pypi/l/jishaku.svg)](https://github.com/scarletcafe/jishaku/blob/master/LICENSE)
 [![Status](https://img.shields.io/pypi/status/jishaku.svg)](https://pypi.python.org/pypi/jishaku)
-[![Issues](https://img.shields.io/github/issues/Gorialis/jishaku.svg?colorB=3333ff)](https://github.com/Gorialis/jishaku/issues)
-[![Commit activity](https://img.shields.io/github/commit-activity/w/Gorialis/jishaku.svg)](https://github.com/Gorialis/jishaku/commits)
+[![Issues](https://img.shields.io/github/issues/scarletcafe/jishaku.svg?colorB=3333ff)](https://github.com/scarletcafe/jishaku/issues)
+[![Commit activity](https://img.shields.io/github/commit-activity/w/scarletcafe/jishaku.svg)](https://github.com/scarletcafe/jishaku/commits)
 
 ***
 
@@ -236,11 +236,11 @@ If you'd like to test the latest versions of jishaku, you can do so by downloadi
 
 > From GitHub:
 > ```bash
-> pip install -U "jishaku @ git+https://github.com/Gorialis/jishaku@master"
+> pip install -U "jishaku @ git+https://github.com/scarletcafe/jishaku@master"
 > ```
 > From GitLab:
 > ```bash
-> pip install -U "jishaku @ git+https://gitlab.com/Gorialis/jishaku@master"
+> pip install -U "jishaku @ git+https://gitlab.com/scarletcafe/jishaku@master"
 > ```
 
 Please note that the new 2020 dependency resolver now no longer discounts git package sources from reinstall prevention,
@@ -250,11 +250,11 @@ If you run into such a problem, you can force jishaku to be reinstalled like thi
 
 > From GitHub:
 > ```bash
-> pip install -U --force-reinstall "jishaku @ git+https://github.com/Gorialis/jishaku@master"
+> pip install -U --force-reinstall "jishaku @ git+https://github.com/scarletcafe/jishaku@master"
 > ```
 > From GitLab:
 > ```bash
-> pip install -U --force-reinstall "jishaku @ git+https://gitlab.com/Gorialis/jishaku@master"
+> pip install -U --force-reinstall "jishaku @ git+https://gitlab.com/scarletcafe/jishaku@master"
 > ```
 
 You **must** have installed jishaku with one of the commands above before doing this else you will probably end up with a broken installation.

@@ -4,7 +4,7 @@
 """
 MIT License
 
-Copyright (c) 2021 Devon (Gorialis) R
+Copyright (c) 2024 Devon (scarletcafe) R
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -101,8 +101,8 @@ with open(ROOT / 'README.md', 'r', encoding='utf-8') as f:
 
 setup(
     name='jishaku',
-    author='Devon (Gorialis) R',
-    url='https://github.com/Gorialis/jishaku',
+    author='Devon (scarletcafe) R',
+    url='https://github.com/scarletcafe/jishaku',
 
     license='MIT',
     description='A discord.py extension including useful tools for bot development and debugging.',
@@ -110,8 +110,8 @@ setup(
     long_description_content_type='text/markdown',
     project_urls={
         'Documentation': 'https://jishaku.readthedocs.io/en/latest/',
-        'Code': 'https://github.com/Gorialis/jishaku',
-        'Issue tracker': 'https://github.com/Gorialis/jishaku/issues'
+        'Code': 'https://github.com/scarletcafe/jishaku',
+        'Issue tracker': 'https://github.com/scarletcafe/jishaku/issues'
     },
 
     version=version,
@@ -127,7 +127,7 @@ setup(
         ],
     },
 
-    download_url=f'https://github.com/Gorialis/jishaku/archive/{version}.tar.gz',
+    download_url=f'https://github.com/scarletcafe/jishaku/archive/{version}.tar.gz',
 
     keywords='jishaku discord.py discord cog repl extension',
     classifiers=[

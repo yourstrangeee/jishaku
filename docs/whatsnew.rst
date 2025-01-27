@@ -3,12 +3,27 @@
 What's new?
 ================
 
+Version 2.6.0
+-------------
+
+My username has changed. This version fixes package metadata associated with this as well as bringing the following (long-overdue) changes:
+
+- The ``jsk sql`` command, which will try to identify SQL adapters on your bot and provide an interface for using them.
+- ``python -m jishaku`` will now attempt to copy the automatically generated bot prefix to your clipboard if the appropriate libraries are installed.
+- Support for translations in ``jsk sync``
+- ``jsk cancel`` now uses Discord markdown timestamps to indicate when tasks were started.
+- ``jsk specialist`` works like `specialist <https://pypi.org/project/specialist/>`_ by executing Python code and reporting areas in which Python 3.11+ optimizations apply.
+- The version of ``import_expression`` used has been bumped, making inline imports possible again on new Python versions.
+- Some fixes to how ``jsk sh`` and similar commands work to make them function better on UNIX systems.
+
+Because it has been such a long time since the last formal release, a lot of these improvements have not received much field testing and may contain regressions. Please report any issues you find.
+
 Version 2.5.2
 -------------
 
 This version is a **backport release** to fix 3.12 and some other long-standing compatibility bugs.
 
-This **does not** contain any new features from master - it is a special bug fix only release. You can see the exact changes by `comparing tags on GitHub <https://github.com/Gorialis/jishaku/compare/2.5.1...2.5.2>`_.
+This **does not** contain any new features from master - it is a special bug fix only release. You can see the exact changes by `comparing tags on GitHub <https://github.com/scarletcafe/jishaku/compare/2.5.1...2.5.2>`_.
 
 Version 2.5.1
 -------------
@@ -135,7 +150,7 @@ A new implementation of PaginatorInterface has been created using Discord's inte
 It is available when using discord.py 2.0.0 or greater (currently alpha).
 
 Jishaku will now avoid uploading files either when detecting the author is on mobile or through an explicit ``JISHAKU_FORCE_PAGINATOR`` switch.
-This is to better support mobile platforms that do not have inline file previews yet. (`PR #111 <https://github.com/Gorialis/jishaku/pull/111>`_).
+This is to better support mobile platforms that do not have inline file previews yet. (`PR #111 <https://github.com/scarletcafe/jishaku/pull/111>`_).
 
 Humanize has been removed as a dependency. Selftest now uses Discord's own relative timestamp formatting markdown extension for timing,
 and pretty printing of memory usage has been implemented within the Feature itself.

@@ -6,7 +6,7 @@ jishaku.codeblocks
 
 Converters for detecting and obtaining codeblock content
 
-:copyright: (c) 2021 Devon (Gorialis) R
+:copyright: (c) 2021 Devon (scarletcafe) R
 :license: MIT, see LICENSE for more details.
 
 """
