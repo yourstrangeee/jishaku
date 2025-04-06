@@ -160,12 +160,17 @@ class InvocationFeature(Feature):
 
                 await alt_ctx.command.reinvoke(alt_ctx)
 
-    @Feature.Command(name="debug", aliases=["dbg"])
+    @Feature.Command(parent="jsk", name="debug", aliases=["dbg"])
     async def jsk_debug(self, ctx: ContextT, *, command_string: str):
         """
         Run a command timing execution and catching exceptions.
         """
-        alt_ctx = await copy_context_with(ctx, content=command_string)
+
+        if ctx.prefix:
+            alt_ctx = await copy_context_with(ctx, content=ctx.prefix + command_string)
+        else:
+            await ctx.send("Reparsing requires a prefix")
+            return
 
         if alt_ctx.command is None:
             return await ctx.send(f'Command "{alt_ctx.invoked_with}" is not found')
